@@ -1,5 +1,9 @@
 import React from 'react';
 import EditorMain from '../components/EditorMain';
+import threeDots from '../components/images/three-dots.png';
+import downArrow from '../components/images/bottom-left-arrow.png';
+import redBunny from '../components/images/red-rabbit.png';
+import timer from '../components/images/timer.png';
 import '../styles/editor.css';
 
 export default function Editor() {
@@ -10,13 +14,19 @@ export default function Editor() {
           <h4>P</h4>
         </li>
         <li>
-          <h4>0min</h4>
+          <span>
+            <img className="ux-icons" src={timer} alt="Timer" />
+            0 min
+          </span>
         </li>
         <li>
-          <img src="" alt="red-bunny" />
+          <img className="ux-icons" src={redBunny} alt="red-bunny" />
         </li>
         <li>
-          <h2>0</h2>
+          <span>
+            <img className="ux-icons" src={downArrow} alt="Bottom left pointing arrow" />
+            0
+          </span>
         </li>
         <li>
           <input className="editor-header-input" type="text" />
@@ -28,11 +38,7 @@ export default function Editor() {
           ☁️
         </li>
         <li>
-          <div className="editor-header-three-dots">
-            .
-            .
-            .
-          </div>
+          <img className="ux-icons" src={threeDots} alt="Delete Pop Up" />
         </li>
       </ul>
       <EditorMain />
