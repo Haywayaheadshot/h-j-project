@@ -1,5 +1,7 @@
 import React from 'react';
 import '../styles/editor-main.css';
+import Blog from './dep/Blog';
+import AddBlog from './dep/AddBlog';
 
 export default function EditorMain() {
   return (
@@ -14,12 +16,10 @@ export default function EditorMain() {
         then typing text then hitting enter.
       </p>
       <section className="display-blogs-ul">
-        <ul className="display-blogs">
-          <li>Blog 1</li>
-        </ul>
+        <Blog />
       </section>
       <section>
-        <input type="text" />
+        <AddBlog />
       </section>
     </div>
   );
