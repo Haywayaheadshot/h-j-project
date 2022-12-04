@@ -15,3 +15,17 @@
   padding: 0;
   text-align: center;
 }
+
+@media (min-width: 760px) {
+  .editor-main-container {
+    display: grid;
+    place-items: center;
+    padding: 2vh 5vw;
+  }
+
+  .editor-main-paragraph {
+    margin: 0;
+    padding: 0 20vw;
+    text-align: left;
+  }
+}
