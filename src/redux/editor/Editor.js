@@ -1,27 +1,33 @@
 const ADD_BLOG = 'book-keeper/src/redux/books/addBlog';
 const REMOVE_BLOG = 'book-keeper/src/redux/books/removeBlog';
 
-export const addBlog = () => (
+const defaultState = [];
+
+// Add and remove blog actions
+export const addBlog = (payload) => (
   {
     type: ADD_BLOG,
-    payload: test,
+    id: payload.id,
+    text: payload.text,
   }
 );
 
-export const removeBlog = () => (
+export const removeBlog = (payload) => (
   {
     type: REMOVE_BLOG,
-    payload: test,
+    id: payload.id,
   }
 );
 
-export default function blogsReducer(state = [], action) {
+// Create reducer for blog
+export default function blogsReducer(state = defaultState, action) {
   switch (action.type) {
     case ADD_BLOG:
       return [
         ...state,
         {
-          payload: action.payload,
+          id: action.id,
+          text: action.text,
         },
       ];
     case REMOVE_BLOG:
