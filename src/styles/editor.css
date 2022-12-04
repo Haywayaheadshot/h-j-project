@@ -1,27 +1,27 @@
 .editor-container {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    justify-content: center;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
 }
 
 .editor-header {
-    margin: 20px 0 0 0;
-    padding: 0 5vw;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    border: 1px solid grey;
-    background-color: #fff;
+  margin: 20px 0 0 0;
+  padding: 0 5vw;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border: 1px solid grey;
+  background-color: #fff;
 }
 
 .editor-header-input {
-    border: none;
+  border: none;
 }
 
 .editor-header-three-dots {
-    display: flex;
-    flex-direction: column;
-    max-width: 1px;
-    gap: 0;
+  display: flex;
+  flex-direction: column;
+  max-width: 1px;
+  gap: 0;
 }

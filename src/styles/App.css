@@ -9,7 +9,6 @@ ul {
   padding: 0;
 }
 
-
 @media (min-width: 760px) {
   .App {
     display: flex;
