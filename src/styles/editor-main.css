@@ -1,0 +1,17 @@
+.editor-main-container {
+    display: grid;
+    place-items: center;
+    padding: 2vh 5vw;
+}
+
+.editor-main-header {
+    text-align: center;
+    border-bottom: 1px solid grey;
+    padding-bottom: 30px;
+}
+
+.editor-main-paragraph {
+    margin: 0;
+    padding: 0;
+    text-align: center;
+}
