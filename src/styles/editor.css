@@ -7,16 +7,18 @@
 
 .editor-header {
   margin: 20px 0 0 0;
-  padding: 0 5vw;
+  padding: 15px 10px;
   display: flex;
   align-items: center;
   justify-content: center;
   border: 1px solid grey;
   background-color: #fff;
+  max-width: 80vw;
 }
 
 .editor-header-input {
   border: none;
+  max-width: 15vw;
 }
 
 .editor-header-three-dots {
@@ -24,4 +26,40 @@
   flex-direction: column;
   max-width: 1px;
   gap: 0;
+}
+
+.editor-header-li {
+  border-right: 1px solid #000;
+  padding-right: 5px;
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  margin-right: 10px;
+  max-width: 15vw;
+}
+
+.editor-header-li:nth-child(1) {
+  line-height: 5px;
+  background-color: green;
+  color: #fff;
+  padding-left: 5px;
+  height: 20px;
+  margin-right: 5px;
+}
+
+.editor-header-li:nth-child(2) {
+  border-left: 1px solid #000;
+  padding-left: 5px;
+}
+
+.editor-header-li:nth-child(4) {
+  border-right: none;
+}
+
+.editor-header-li:nth-child(5),
+.editor-header-li:nth-child(6),
+.editor-header-li:nth-child(7),
+.editor-header-li:nth-child(8) {
+  border: none;
 }
