@@ -12,9 +12,7 @@
 }
 
 .addBlog-input-blog:focus {
-  /* min-width: 40vw;
-  margin-top: 20px; */
-  border-radius: none;
+  border-radius: 0;
   border: none;
 }
 
@@ -84,7 +82,7 @@
 }
 
 .input-pop-up-default-li-h1h4:nth-child(2) {
-  color:rgba(128, 128, 128, 0.866);
+  color: rgba(128, 128, 128, 0.866);
 }
 
 @media (min-width: 760px) {

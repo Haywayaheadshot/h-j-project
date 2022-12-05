@@ -20,7 +20,7 @@
   display: grid;
   min-width: 85vw;
   padding-left: 20px;
-  place-content: left;
+  place-content: start;
 }
 
 @media (min-width: 760px) {
@@ -40,6 +40,6 @@
     display: grid;
     min-width: 52vw;
     padding-left: 20px;
-    place-content: left;
+    place-content: start;
   }
 }
