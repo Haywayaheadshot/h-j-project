@@ -87,7 +87,7 @@
 
 @media (min-width: 760px) {
   .addBlog-input-blog {
-    min-width: 50vw;
+    min-width: 43vw;
     margin-top: 20px;
     min-height: 20px;
   }
@@ -108,5 +108,9 @@
   .input-pop-up-default-container {
     display: grid;
     padding-bottom: 12vh;
+  }
+
+  .user-input-container {
+    max-width: 43vw;
   }
 }
