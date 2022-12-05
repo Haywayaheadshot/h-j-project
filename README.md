@@ -103,4 +103,4 @@ const proudOfThisFunc = () => {
 ## Acknowledgments
 
 - Thanks to Microverse for knowledge impacted.
-- Thanks to [flaticons](https://www.flaticon.com/) for the icons used.
+- Thanks to [Flaticons](https://www.flaticon.com/) for the icons used.
