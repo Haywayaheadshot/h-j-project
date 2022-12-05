@@ -18,8 +18,9 @@
 
 .display-blogs-section {
   display: grid;
-  min-width: 40vw;
+  min-width: 85vw;
   padding-left: 20px;
+  place-content: left;
 }
 
 @media (min-width: 760px) {
@@ -33,5 +34,12 @@
     margin: 0;
     padding: 0 20vw;
     text-align: left;
+  }
+
+  .display-blogs-section {
+    display: grid;
+    min-width: 52vw;
+    padding-left: 20px;
+    place-content: left;
   }
 }
