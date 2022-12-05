@@ -15,7 +15,7 @@ export default function EditorMain() {
         to create a H1 text simply by typing them / 1,
         then typing text then hitting enter.
       </p>
-      <section className="display-blogs-ul">
+      <section className="display-blogs-section">
         <Blog />
       </section>
       <section>
