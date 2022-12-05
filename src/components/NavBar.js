@@ -7,16 +7,16 @@ export default function NavBar() {
   return (
     <div className="nav-container">
       <ul className="nav-logoSide-ul">
-        <li>
-          <button className="nav-logoSide-ul-btn" type="button">{'>> /'}</button>
+        <li className="nav-logoSide-li">
+          <button className="nav-logoSide-ul-btn" type="button">{'>>'}</button>
         </li>
-        <li>
+        <li className="nav-logoSide-li">
           <button className="nav-logoSide-ul-btn" type="button">📖Main /</button>
         </li>
-        <li>
+        <li className="nav-logoSide-li">
           <button className="nav-logoSide-ul-btn" type="button">Getting Start /</button>
         </li>
-        <li>
+        <li className="nav-logoSide-li">
           <button className="nav-logoSide-ul-btn" type="button">Front-end developer test project /</button>
         </li>
       </ul>
