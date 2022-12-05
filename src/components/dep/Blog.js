@@ -21,8 +21,3 @@ export default function Blog() {
     </div>
   );
 }
-
-// Blog.propTypes = {
-//   id: PropTypes.string.isRequired,
-//   text: PropTypes.string.isRequired,
-// };
