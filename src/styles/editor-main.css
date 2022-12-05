@@ -16,6 +16,12 @@
   text-align: center;
 }
 
+.display-blogs-section {
+  display: grid;
+  min-width: 40vw;
+  padding-left: 20px;
+}
+
 @media (min-width: 760px) {
   .editor-main-container {
     display: grid;

@@ -33,8 +33,28 @@
   display: block;
 }
 
+.span-v {
+  padding-left: 5px;
+  color: blue;
+}
+
 .for-desktop {
   display: none;
+}
+
+.hamburger-ul-btns {
+  background-color: inherit;
+  color: #000;
+  border: none;
+}
+
+.desk-right-ul-li:nth-child(1) {
+  border-right: 1px solid #000;
+  padding-right: 15px;
+}
+
+.desk-right-ul-li:hover {
+  color: blue;
 }
 
 @media (min-width: 760px) {

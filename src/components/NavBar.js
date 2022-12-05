@@ -11,7 +11,7 @@ export default function NavBar() {
           <button className="nav-logoSide-ul-btn" type="button">{'>> /'}</button>
         </li>
         <li>
-          <button className="nav-logoSide-ul-btn" type="button">Main /</button>
+          <button className="nav-logoSide-ul-btn" type="button">📖Main /</button>
         </li>
         <li>
           <button className="nav-logoSide-ul-btn" type="button">Getting Start /</button>
@@ -28,18 +28,24 @@ export default function NavBar() {
         { isOpen ? (
           <ul className="hamburger-ul">
             <li>
-              <button type="button" onClick={() => isClosed(false)}>Editing</button>
+              <button className="hamburger-ul-btns" type="button" onClick={() => isClosed(false)}>🔓Editing</button>
             </li>
             <li>
-              <button type="button" onClick={() => isClosed(false)}>Publish Space</button>
+              <button className="hamburger-ul-btns" type="button" onClick={() => isClosed(false)}>
+                Publish Space
+                <span className="span-v">v</span>
+              </button>
             </li>
           </ul>
         ) : null}
       </section>
       <section className="for-desktop">
         <ul className="desk-right-ul">
-          <li>Editing</li>
-          <li>Publish Space</li>
+          <li className="desk-right-ul-li">🔓Editing</li>
+          <li className="desk-right-ul-li">
+            Publish Space
+            <span className="span-v">v</span>
+          </li>
         </ul>
       </section>
     </div>

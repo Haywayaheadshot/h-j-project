@@ -13,9 +13,9 @@ export default function Blog() {
             ➕
             <DeleteBlog id={blog.id} />
           </div>
-          <p>
+          <blog.tagName>
             {blog.text}
-          </p>
+          </blog.tagName>
         </div>
       )) }
     </div>
