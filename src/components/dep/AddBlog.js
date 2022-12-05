@@ -37,7 +37,7 @@ export default function AddBlog() {
     }
   };
   return (
-    <>
+    <div className="user-input-container">
       <input
         type="text"
         placeholder="Type / for block, @ to link docs or people"
@@ -75,6 +75,6 @@ export default function AddBlog() {
           </ul>
         </section>
       ) : null }
-    </>
+    </div>
   );
 }
