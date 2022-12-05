@@ -11,11 +11,11 @@ export default function Editor() {
   return (
     <div className="editor-container">
       <ul className="editor-header">
-        <li className="editor-header-li">
+        <li className="editor-header-li font">
           <h4>P</h4>
         </li>
         <li className="editor-header-li">
-          <span>
+          <span className="font">
             <img className="ux-icons" src={timer} alt="Timer" />
             0 min
           </span>
@@ -24,7 +24,7 @@ export default function Editor() {
           <img className="ux-icons" src={redBunny} alt="red-bunny" />
         </li>
         <li className="editor-header-li">
-          <span>
+          <span className="font">
             <img className="ux-icons" src={downArrow} alt="Bottom left pointing arrow" />
             0
           </span>
