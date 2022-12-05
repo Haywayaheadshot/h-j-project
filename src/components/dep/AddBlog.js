@@ -51,21 +51,21 @@ export default function AddBlog() {
           <h4 className="input-header-choice-pop-h1h4">Keep trying to filter or escape to exit</h4>
           <h4 className="input-header-choice-pop-h1h4">
             Filtering Keyword
-            <span>1</span>
+            <span className="span-pop-up-addBlog">1</span>
           </h4>
           <ul className="input-pop-up-default-container">
             <li className="input-pop-up-default-li">
-              <img className="ux-icons" src={fontType} alt="Font Type" />
+              <img className="ux-icons-font" src={fontType} alt="Font Type" />
               <div>
-                <h1 className="input-pop-up-default-li-h1">Heading 1</h1>
-                <h4>Shortcut: type # + space</h4>
+                <h1 className="input-pop-up-default-li-h1h4">Heading 1</h1>
+                <h4 className="input-pop-up-default-li-h1h4">Shortcut: type # + space</h4>
               </div>
             </li>
             <li className="input-pop-up-default-li">
-              <img className="ux-icons" src={fontType} alt="Font Type" />
+              <img className="ux-icons-font" src={fontType} alt="Font Type" />
               <div>
                 <h1 className="input-pop-up-default-li-h1">Expendable Heading 1</h1>
-                <h4>
+                <h4 className="input-pop-up-default-li-h1h4">
                   Shortcut: type
                   {'>>'}
                   # + space
