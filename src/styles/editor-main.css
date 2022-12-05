@@ -32,8 +32,9 @@
 
   .editor-main-paragraph {
     margin: 0;
-    padding: 0 20vw;
+    padding: 0 0;
     text-align: left;
+    max-width: 42vw;
   }
 
   .display-blogs-section {
@@ -42,4 +43,12 @@
     padding-left: 20px;
     place-content: start;
   }
+
+  .editor-main-header {
+    text-align: left;
+    border-bottom: 1px solid grey;
+    padding-bottom: 30px;
+    min-width: 42vw;
+  }
+  
 }
