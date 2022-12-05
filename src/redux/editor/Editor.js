@@ -23,6 +23,8 @@ export const removeBlog = (payload) => (
 export default function blogsReducer(state = defaultState, action) {
   switch (action.type) {
     case ADD_BLOG:
+      // Write condition to check if received blog starts with /1 - /6
+      // and change tag respectively
       if (action.text.startsWith('/')) {
         const startText = action.text.slice(0, 2);
         const headerTags = {
@@ -37,6 +39,7 @@ export default function blogsReducer(state = defaultState, action) {
           ...state,
           {
             id: action.id,
+            // Check if user starts with values not in headerTags
             text: headerTags[startText] ? action.text.slice(2) : action.text,
             tagName: headerTags[startText] ? headerTags[startText] : 'p',
           },
