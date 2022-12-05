@@ -12,7 +12,7 @@ export default function EditorMain() {
       <p className="editor-main-paragraph">
         Your goal is to make a page that looks
         exactly like this one, and has the ability
-        to create a H1 text simply by typing them / 1,
+        to create a H1 text simply by typing / then 1,
         then typing text then hitting enter.
       </p>
       <section className="display-blogs-section">
