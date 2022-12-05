@@ -14,6 +14,7 @@
   border: 1px solid grey;
   background-color: #fff;
   max-width: 80vw;
+  box-shadow: 0 0 5px #000;
 }
 
 .editor-header-input {
@@ -62,4 +63,10 @@
 .editor-header-li:nth-child(7),
 .editor-header-li:nth-child(8) {
   border: none;
+}
+
+@media (min-width: 760px) {
+  .editor-header {
+    min-width: 40vw;
+  }
 }

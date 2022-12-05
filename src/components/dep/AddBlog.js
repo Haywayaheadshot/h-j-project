@@ -37,35 +37,35 @@ export default function AddBlog() {
     }
   };
   return (
-    <>
+    <div className="user-input-container">
       <input
         type="text"
         placeholder="Type / for block, @ to link docs or people"
         onChange={onChangetext}
         onKeyDown={onPressEnter}
-        className="addBlog-input-blog"
+        className="addBlog-input-blog font"
       />
       { (text.startsWith('/1')) ? (
         <section className="input-header-choice-pop">
-          <h1 className="input-header-choice-pop-h1h4">Add blocks</h1>
-          <h4 className="input-header-choice-pop-h1h4">Keep trying to filter or escape to exit</h4>
-          <h4 className="input-header-choice-pop-h1h4">
+          <h1 className="input-header-choice-pop-h1h4 font">Add blocks</h1>
+          <h4 className="input-header-choice-pop-h1h4 font">Keep trying to filter or escape to exit</h4>
+          <h4 className="input-header-choice-pop-h1h4 font">
             Filtering Keyword
-            <span>1</span>
+            <span className="span-pop-up-addBlog font">1</span>
           </h4>
           <ul className="input-pop-up-default-container">
             <li className="input-pop-up-default-li">
-              <img className="ux-icons" src={fontType} alt="Font Type" />
+              <img className="ux-icons-font" src={fontType} alt="Font Type" />
               <div>
-                <h1 className="input-pop-up-default-li-h1">Heading 1</h1>
-                <h4>Shortcut: type # + space</h4>
+                <h1 className="input-pop-up-default-li-h1h4 font">Heading 1</h1>
+                <h4 className="input-pop-up-default-li-h1h4 font">Shortcut: type # + space</h4>
               </div>
             </li>
             <li className="input-pop-up-default-li">
-              <img className="ux-icons" src={fontType} alt="Font Type" />
+              <img className="ux-icons-font" src={fontType} alt="Font Type" />
               <div>
-                <h1 className="input-pop-up-default-li-h1">Expendable Heading 1</h1>
-                <h4>
+                <h1 className="input-pop-up-default-li-h1 font">Expendable Heading 1</h1>
+                <h4 className="input-pop-up-default-li-h1h4 font">
                   Shortcut: type
                   {'>>'}
                   # + space
@@ -75,6 +75,6 @@ export default function AddBlog() {
           </ul>
         </section>
       ) : null }
-    </>
+    </div>
   );
 }

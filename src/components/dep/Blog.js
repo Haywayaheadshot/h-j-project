@@ -6,7 +6,7 @@ import '../../styles/blog.css';
 export default function Blog() {
   const blogs = useSelector((state) => state.blogs);
   return (
-    <div className="blog-container">
+    <div className="mapped-blog-container">
       { blogs.map((blog) => (
         <div key={blog.id}>
           <div className="plus-delete-btn-cont">

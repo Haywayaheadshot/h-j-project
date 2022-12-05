@@ -20,6 +20,17 @@
   padding: 0;
   border: 0;
   background-color: inherit;
+  font-weight: 500;
+  color: #000;
+}
+
+.nav-logoSide-li {
+  display: flex;
+  flex-direction: row;
+}
+
+.nav-logoSide-li:nth-child(1) {
+  padding-right: 5px;
 }
 
 .hamburger-ul {
@@ -60,7 +71,7 @@
 @media (min-width: 760px) {
   .nav-container {
     min-width: 100vw;
-    background-color: rgba(128, 128, 128, 0.579);
+    background-color: #fff;
     display: flex;
     flex-direction: row;
     min-height: 5vh;
@@ -80,6 +91,29 @@
     min-width: 70%;
     padding-right: 4vw;
     gap: 20px;
+  }
+
+  .nav-logoSide-li:nth-child(1) {
+    padding-right: 20px;
+  }
+
+  .nav-logoSide-ul-btn {
+    margin: 0;
+    padding: 0;
+    border: 0;
+    background-color: inherit;
+    font-weight: 500;
+    color: rgba(128, 128, 128, 0.784);
+  }
+
+  .desk-right-ul-li {
+    font-weight: 400;
+    color: rgba(128, 128, 128, 0.784);
+  }
+
+  .desk-right-ul-li:nth-child(2) {
+    font-weight: 700;
+    color: blue;
   }
 
   .for-desktop {
