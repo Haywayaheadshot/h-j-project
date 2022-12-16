@@ -7,6 +7,7 @@ import '../../styles/add-blog.css';
 
 export default function AddBlog() {
   const [text, setText] = useState('');
+  const [setPlaceHolder] = useState('Type / for block, @ to link docs or people');
   const dispatch = useDispatch();
   // Use uuid to create unique ids
   const uId = uuid();
@@ -29,12 +30,22 @@ export default function AddBlog() {
       }
     }
   };
+
+  const onPopUpClickHandler = () => {
+    // Change the placed holder of the input to header
+
+    // Change the the tagName to the header shortcode
+
+    // clear the input field
+    setText('');
+  };
+
   return (
     <div className="user-input-container">
       <input
         type="text"
         value={text}
-        placeholder="Type / for block, @ to link docs or people"
+        placeholder={setPlaceHolder}
         onChange={onChangetext}
         onKeyDown={onPressEnter}
         className="addBlog-input-blog font"
@@ -51,30 +62,33 @@ export default function AddBlog() {
             </span>
           </h4>
           <ul className="input-pop-up-default-container">
-            <li className="input-pop-up-default-li">
-              <img className="ux-icons-font" src={fontType} alt="Font Type" />
-              <div>
-                <h1 className="input-pop-up-default-li-h1h4 font">
-                  Heading
-                  <span className="span-header-choice">{startTextInput.slice(1, 2)}</span>
-                </h1>
-                <h4 className="input-pop-up-default-li-h1h4 font">Shortcut: type # + space</h4>
-              </div>
+            <li>
+              <button className="input-pop-up-default-li" type="button" onClick={() => onPopUpClickHandler()}>
+                <img className="ux-icons-font" src={fontType} alt="Font Type" />
+                <div>
+                  <h1 className="input-pop-up-default-li-h1h4 font">
+                    Heading
+                    <span className="span-header-choice">{startTextInput.slice(1, 2)}</span>
+                  </h1>
+                  {/* <h4 className="input-pop-up-default-li-h1h4 font">Shortcut:
+                type # + space</h4> */}
+                </div>
+              </button>
             </li>
-            <li className="input-pop-up-default-li">
+            {/* <li className="input-pop-up-default-li">
               <img className="ux-icons-font" src={fontType} alt="Font Type" />
               <div>
                 <h1 className="input-pop-up-default-li-h1 font">
                   Expendable Heading
                   <span className="span-header-choice">{startTextInput.slice(1, 2)}</span>
                 </h1>
-                <h4 className="input-pop-up-default-li-h1h4 font">
+                 <h4 className="input-pop-up-default-li-h1h4 font">
                   Shortcut: type
                   {'>>'}
                   # + space
                 </h4>
               </div>
-            </li>
+            </li> */}
           </ul>
         </section>
       ) : null }
