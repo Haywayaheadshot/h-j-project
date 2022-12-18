@@ -23,8 +23,9 @@ export default function AddBlog() {
     // Write conditions to check for enter key if string input isnt empty
     if (e.keyCode === 13) {
       if ((text !== '') && (text !== '/1') && (text !== '/2') && (text !== '/3') && (text !== '/4') && (text !== '/5') && (text !== '/6')) {
+        const tagName = `h${placeHolder.slice(8)}`;
         dispatch(addBlog({
-          id, text,
+          id, text, tagName,
         }));
         setText('');
         setPlaceHolder('Type / for block, @ to link docs or people');
