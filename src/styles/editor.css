@@ -17,9 +17,23 @@
   box-shadow: 0 0 5px #000;
 }
 
+.night .editor-header {
+  border: 1px solid grey;
+  box-shadow: 0 0 10px #fff;
+  background-color: grey;
+}
+
 .editor-header-input {
   border: none;
   max-width: 15vw;
+}
+
+.night .editor-header-input {
+  background-color: #000;
+}
+
+.night .editor-header-input::placeholder {
+  color: #fff;
 }
 
 .editor-header-three-dots {
