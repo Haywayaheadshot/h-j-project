@@ -1,6 +1,6 @@
-# Help Juice - Notion Editor Clone Challenge Solution
+# Notion Editor Clone Challenge Solution
 
-This is a solution for the Notion Editor Clone challenge by help juice.
+This is a clone of Notion editor. 
 
 ## Table of contents
 
@@ -28,15 +28,17 @@ Users should be able to:
 
 ### Screenshot
 
-![Mobile](./src/components/images/Notion-Editor-Clone-mobile-1.png)
-![Mobile](./src/components/images/Notion-Editor-Clone-mobile-2.png)
+![Mobile](/src/components/images/Notion-Editor-Clone-mobile-1.png)
+![Mobile](/src/components/images/Notion-Editor-Clone-mobile-2.png)
 
-![Desktop](./src/components/images/Notion-Editor-Clone-desktop-1.png)
+![Desktop](/src/components/images/Notion-Editor-Clone-desktop-1.png)
+![Desktop](/src/components/images/Notion-Editor-Clone-desktop-2.png)
 
 ### Links
 
 - Solution URL: [Github](https://github.com/Haywayaheadshot/h-j-project)
 - Live Site URL: [Live Demo](https://cute-figolla-4abcee.netlify.app/)
+- Demo URL : [Demo]()
 
 ## My process
 
@@ -88,7 +90,7 @@ const proudOfThisFunc = () => {
         {
           id: action.id,
           text: action.text,
-          tagName: 'p',
+          tagName: action.tagName,
         },
       ];
 }
