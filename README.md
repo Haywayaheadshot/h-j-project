@@ -1,4 +1,4 @@
-# Notion Editor Clone Challenge Solution
+# Notion Editor Clone
 
 This is a clone of Notion editor. 
 
