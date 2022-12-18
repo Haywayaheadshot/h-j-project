@@ -1,5 +1,5 @@
 .input-header-choice-pop {
-  min-width: 40vw;
+  max-width: max-content;
   border: 1px solid black;
   border-radius: 5px;
 }
@@ -22,6 +22,13 @@
   place-content: center;
   padding: 2vh 20px;
   max-height: 10vh;
+  border: none;
+  background-color: inherit;
+  width: 100%;
+}
+
+.input-pop-up-default-li:hover {
+  background-color: rgba(128, 128, 128, 0.332);
 }
 
 .ux-icons-font {
@@ -32,16 +39,11 @@
 }
 
 .input-pop-up-default-li-h1h4 {
+  text-align: left;
+  line-height: 24px;
+  font-size: 1.2rem;
   margin: 0;
-  padding: 0;
-}
-
-.input-pop-up-default-li:nth-child(odd) {
-  background-color: rgba(128, 128, 128, 0.332);
-}
-
-.input-pop-up-default-li:nth-child(even) {
-  background-color: #fff;
+  padding: 0 0 0 10px;
 }
 
 .input-pop-up-default-li-h1 {

@@ -5,6 +5,7 @@ import '../../styles/blog.css';
 
 export default function Blog() {
   const blogs = useSelector((state) => state.blogs);
+
   return (
     <div className="mapped-blog-container">
       { blogs.map((blog) => (
@@ -13,7 +14,7 @@ export default function Blog() {
             ➕
             <DeleteBlog id={blog.id} />
           </div>
-          <blog.tagName>
+          <blog.tagName contentEditable="true">
             {blog.text}
           </blog.tagName>
         </div>

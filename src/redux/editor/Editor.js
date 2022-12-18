@@ -9,6 +9,7 @@ export const addBlog = (payload) => (
     type: ADD_BLOG,
     id: payload.id,
     text: payload.text,
+    tagName: payload.tagName,
   }
 );
 
@@ -50,7 +51,7 @@ export default function blogsReducer(state = defaultState, action) {
         {
           id: action.id,
           text: action.text,
-          tagName: 'p',
+          tagName: action.tagName,
         },
       ];
 

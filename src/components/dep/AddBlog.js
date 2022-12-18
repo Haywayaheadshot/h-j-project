@@ -7,7 +7,7 @@ import '../../styles/add-blog.css';
 
 export default function AddBlog() {
   const [text, setText] = useState('');
-  const [setPlaceHolder] = useState('Type / for block, @ to link docs or people');
+  const [placeHolder, setPlaceHolder] = useState('Type / for block, @ to link docs or people');
   const dispatch = useDispatch();
   // Use uuid to create unique ids
   const uId = uuid();
@@ -22,22 +22,36 @@ export default function AddBlog() {
   const onPressEnter = (e) => {
     // Write conditions to check for enter key if string input isnt empty
     if (e.keyCode === 13) {
-      if ((text !== '')) {
-        dispatch(addBlog({
-          id, text,
-        }));
-        setText('');
+      if ((text !== '') && (text !== '/1') && (text !== '/2') && (text !== '/3') && (text !== '/4') && (text !== '/5') && (text !== '/6')) {
+        if (placeHolder.startsWith('Head')) {
+          const tagName = `h${placeHolder.slice(8)}`;
+          dispatch(addBlog({
+            id, text, tagName,
+          }));
+          setText('');
+          setPlaceHolder('Type / for block, @ to link docs or people');
+        } else {
+          const tagName = 'p';
+          dispatch(addBlog({
+            id, text, tagName,
+          }));
+          setText('');
+          setPlaceHolder('Type / for block, @ to link docs or people');
+        }
       }
     }
   };
 
   const onPopUpClickHandler = () => {
     // Change the placed holder of the input to header
-
+    // setPlaceHolder(startTextInput.slice(0));
     // Change the the tagName to the header shortcode
 
     // clear the input field
     setText('');
+
+    // Set the place holder
+    setPlaceHolder(`Heading ${startTextInput.slice(1)}`);
   };
 
   return (
@@ -45,7 +59,7 @@ export default function AddBlog() {
       <input
         type="text"
         value={text}
-        placeholder={setPlaceHolder}
+        placeholder={placeHolder}
         onChange={onChangetext}
         onKeyDown={onPressEnter}
         className="addBlog-input-blog font"
@@ -70,25 +84,9 @@ export default function AddBlog() {
                     Heading
                     <span className="span-header-choice">{startTextInput.slice(1, 2)}</span>
                   </h1>
-                  {/* <h4 className="input-pop-up-default-li-h1h4 font">Shortcut:
-                type # + space</h4> */}
                 </div>
               </button>
             </li>
-            {/* <li className="input-pop-up-default-li">
-              <img className="ux-icons-font" src={fontType} alt="Font Type" />
-              <div>
-                <h1 className="input-pop-up-default-li-h1 font">
-                  Expendable Heading
-                  <span className="span-header-choice">{startTextInput.slice(1, 2)}</span>
-                </h1>
-                 <h4 className="input-pop-up-default-li-h1h4 font">
-                  Shortcut: type
-                  {'>>'}
-                  # + space
-                </h4>
-              </div>
-            </li> */}
           </ul>
         </section>
       ) : null }
