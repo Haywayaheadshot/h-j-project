@@ -22,22 +22,25 @@ export default function AddBlog() {
   const onPressEnter = (e) => {
     // Write conditions to check for enter key if string input isnt empty
     if (e.keyCode === 13) {
-      if ((text !== '')) {
+      if ((text !== '') && (text !== '/1') && (text !== '/2') && (text !== '/3') && (text !== '/4') && (text !== '/5') && (text !== '/6')) {
         dispatch(addBlog({
           id, text,
         }));
         setText('');
+      } else if ((text === '/1') || (text === '/2') || (text === '/3') || (text === '/4') || (text === '/5') || (text === '/6')) {
+        // setText('');
       }
     }
   };
 
   const onPopUpClickHandler = () => {
     // Change the placed holder of the input to header
-
+    // setPlaceHolder(startTextInput.slice(0));
     // Change the the tagName to the header shortcode
 
     // clear the input field
     setText('');
+    // setPlaceHolder = startTextInput.slice();;
   };
 
   return (
