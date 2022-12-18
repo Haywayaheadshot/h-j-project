@@ -4,7 +4,15 @@ import DeleteBlog from './DeleteBlog';
 import '../../styles/blog.css';
 
 export default function Blog() {
+  // const [setEditedBlog] = useState();
   const blogs = useSelector((state) => state.blogs);
+  // const onBlogHandler = (e) => {
+  //   if (e.keyCode === 13) {
+  //     // console.log('edited');
+  //     setEditedBlog(e.target.value);
+  //   }
+  // };
+
   return (
     <div className="mapped-blog-container">
       { blogs.map((blog) => (
@@ -13,7 +21,7 @@ export default function Blog() {
             ➕
             <DeleteBlog id={blog.id} />
           </div>
-          <blog.tagName>
+          <blog.tagName contentEditable="true">
             {blog.text}
           </blog.tagName>
         </div>
