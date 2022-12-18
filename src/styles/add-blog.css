@@ -4,11 +4,25 @@
   border-radius: 5px;
 }
 
+.night .input-header-choice-pop {
+  background-color: grey;
+}
+
 .addBlog-input-blog {
   min-width: 82vw;
   margin-top: 40px;
   min-height: 40px;
   border: none;
+  cursor: pointer;
+}
+
+.night .addBlog-input-blog {
+  background-color: grey;
+  color: #fff;
+}
+
+.night .addBlog-input-blog::placeholder {
+  color: #fff;
 }
 
 .addBlog-input-blog:focus {
@@ -29,6 +43,10 @@
 
 .input-pop-up-default-li:hover {
   background-color: rgba(128, 128, 128, 0.332);
+}
+
+.night .input-pop-up-default-li:hover {
+  background-color: #fff;
 }
 
 .ux-icons-font {
