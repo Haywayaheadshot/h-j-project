@@ -14,7 +14,7 @@ export default function Blog() {
             ➕
             <DeleteBlog id={blog.id} />
           </div>
-          <blog.tagName contentEditable="true">
+          <blog.tagName className="mapped-blog" contentEditable="true">
             {blog.text}
           </blog.tagName>
         </div>

@@ -68,6 +68,14 @@
   color: blue;
 }
 
+.night .for-phone {
+  color: #fff;
+}
+
+.night .nav-logoSide-ul-btn {
+  color: #fff;
+}
+
 @media (min-width: 760px) {
   .nav-container {
     min-width: 100vw;
@@ -122,5 +130,13 @@
 
   .for-phone {
     display: none;
+  }
+
+  .night .nav-container {
+    background-color: grey;
+  }
+
+  .night .desk-right-ul-li:nth-child(1) {
+    color: #fff;
   }
 }
