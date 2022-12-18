@@ -10,10 +10,18 @@
   padding-bottom: 30px;
 }
 
+.night .editor-main-header {
+  color: hsl(229, 24%, 87%);
+}
+
 .editor-main-paragraph {
   margin: 0;
   padding: 0;
   text-align: center;
+}
+
+.night .editor-main-paragraph {
+  color: hsl(229, 24%, 87%);
 }
 
 .display-blogs-section {
