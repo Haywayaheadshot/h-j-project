@@ -9,6 +9,7 @@ export const addBlog = (payload) => (
     type: ADD_BLOG,
     id: payload.id,
     text: payload.text,
+    tagName: payload.tagName,
   }
 );
 
