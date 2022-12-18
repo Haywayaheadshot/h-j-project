@@ -1,0 +1,85 @@
+.switch-label-app {
+  display: inline-block;
+  width: 80px;
+  height: 40px;
+  background-color: hsl(206, 94%, 87%);
+  border-radius: 30px;
+  position: fixed;
+  top: 2.5vh;
+  right: 0;
+  transition: 0.4s;
+}
+
+.switch-input-app {
+  opacity: 0;
+  width: 0;
+  height: 0;
+}
+
+.switch-slider-app {
+  position: absolute;
+  cursor: pointer;
+  top: 0;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  transition: 0.4s;
+}
+
+.switch-slider-app::before {
+  position: absolute;
+  content: "";
+  height: 33px;
+  width: 33px;
+  left: 4px;
+  bottom: 4px;
+  top: 4px;
+  background-color: hsl(213, 96%, 18%);
+  transition: 0.4s;
+  border-radius: 50%;
+}
+
+.switch-input-app:checked + .switch-slider-app {
+  position: relative;
+  height: 30px;
+  width: 26px;
+  left: 32px;
+  border-radius: 50%;
+  transition: 0.4s;
+}
+
+.night {
+  background-color: rgb(20, 15, 15);
+}
+
+.night .switch-label-app {
+  background-color: rgb(20, 15, 15);
+}
+
+.night .switch-slider-app::before {
+  background-color: #fff;
+}
+
+.day {
+  /* background-color: hsl(206, 94%, 87%); */
+  background-color: #fff;
+}
+
+/* .switch-input:checked + .switch-slider {
+      background-color: hsl(213, 96%, 18%);
+  } */
+
+@media (min-width: 760px) {
+  .switch-label-app {
+    top: 5vh;
+    background-color: hsl(206, 94%, 87%);
+  }
+
+  .night .switch-label-app {
+    background-color: hsl(231, 100%, 99%);
+  }
+
+  .night .switch-slider-app::before {
+    background-color: #000;
+  }
+}
