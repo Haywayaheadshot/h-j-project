@@ -11,6 +11,7 @@ This is a clone of Notion editor.
 - [My process](#my-process)
   - [Built with](#built-with)
   - [What I learned](#what-i-learned)
+  - [Setup](#setup)
 - [Author](#author)
 - [Acknowledgments](#acknowledgments)
 
@@ -95,6 +96,13 @@ const proudOfThisFunc = () => {
       ];
 }
 ```
+
+>### Setup
+
+- Clone this [repository](https://github.com/Haywayaheadshot/h-j-project.git) to your desired folder.
+- Access `cd h-j-project`
+- npm install
+- npm start
 
 ## Author
 
