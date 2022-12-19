@@ -1,0 +1,18 @@
+.plus-delete-btn-cont {
+  display: none;
+}
+
+.mapped-blog-container {
+  margin-left: 52px;
+  max-width: 30vw;
+}
+
+.night .mapped-blog {
+  color: #fff;
+}
+
+@media (min-width: 760px) {
+  .mapped-blog-container {
+    margin-left: 52px;
+  }
+}

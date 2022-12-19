@@ -1,0 +1,142 @@
+.nav-container {
+  min-width: 100vw;
+  background-color: rgba(128, 128, 128, 0.579);
+  display: flex;
+  min-height: 5vh;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.nav-logoSide-ul {
+  list-style: none;
+  display: flex;
+  gap: 5px;
+  padding: 0 5px;
+}
+
+.nav-logoSide-ul-btn {
+  margin: 0;
+  padding: 0;
+  border: 0;
+  background-color: inherit;
+  font-weight: 500;
+  color: #000;
+}
+
+.nav-logoSide-li {
+  display: flex;
+  flex-direction: row;
+}
+
+.nav-logoSide-li:nth-child(1) {
+  padding-right: 5px;
+}
+
+.hamburger-ul {
+  padding: 2vh;
+  list-style: none;
+  position: fixed;
+  background-color: rgba(128, 128, 128, 0.579);
+}
+
+.for-phone {
+  display: block;
+}
+
+.span-v {
+  padding-left: 5px;
+  color: blue;
+}
+
+.for-desktop {
+  display: none;
+}
+
+.hamburger-ul-btns {
+  background-color: inherit;
+  color: #000;
+  border: none;
+}
+
+.desk-right-ul-li:nth-child(1) {
+  border-right: 1px solid #000;
+  padding-right: 15px;
+}
+
+.desk-right-ul-li:hover {
+  color: blue;
+}
+
+.night .for-phone {
+  color: #fff;
+}
+
+.night .nav-logoSide-ul-btn {
+  color: #fff;
+}
+
+@media (min-width: 760px) {
+  .nav-container {
+    min-width: 100vw;
+    background-color: #fff;
+    display: flex;
+    flex-direction: row;
+    min-height: 5vh;
+    justify-content: space-between;
+  }
+
+  .nav-logoSide-ul {
+    list-style: none;
+    display: flex;
+    gap: 5px;
+    padding: 0 2vw;
+  }
+
+  .desk-right-ul {
+    display: flex;
+    flex-direction: row;
+    min-width: 70%;
+    padding-right: 4vw;
+    gap: 20px;
+  }
+
+  .nav-logoSide-li:nth-child(1) {
+    padding-right: 20px;
+  }
+
+  .nav-logoSide-ul-btn {
+    margin: 0;
+    padding: 0;
+    border: 0;
+    background-color: inherit;
+    font-weight: 500;
+    color: rgba(128, 128, 128, 0.784);
+  }
+
+  .desk-right-ul-li {
+    font-weight: 400;
+    color: rgba(128, 128, 128, 0.784);
+  }
+
+  .desk-right-ul-li:nth-child(2) {
+    font-weight: 700;
+    color: blue;
+  }
+
+  .for-desktop {
+    display: block;
+  }
+
+  .for-phone {
+    display: none;
+  }
+
+  .night .nav-container {
+    background-color: grey;
+  }
+
+  .night .desk-right-ul-li:nth-child(1) {
+    color: #fff;
+  }
+}
