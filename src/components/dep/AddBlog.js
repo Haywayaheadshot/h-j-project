@@ -9,7 +9,7 @@ export default function AddBlog() {
   const [text, setText] = useState('');
   const [placeHolder, setPlaceHolder] = useState('Type / for block, @ to link docs or people');
   const dispatch = useDispatch();
-  
+
   // Use uuid to create unique ids
   const uId = uuid();
   const id = uId.slice(0, 8);
