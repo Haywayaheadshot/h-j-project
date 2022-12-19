@@ -9,6 +9,7 @@ export default function AddBlog() {
   const [text, setText] = useState('');
   const [placeHolder, setPlaceHolder] = useState('Type / for block, @ to link docs or people');
   const dispatch = useDispatch();
+  
   // Use uuid to create unique ids
   const uId = uuid();
   const id = uId.slice(0, 8);
@@ -43,10 +44,6 @@ export default function AddBlog() {
   };
 
   const onPopUpClickHandler = () => {
-    // Change the placed holder of the input to header
-    // setPlaceHolder(startTextInput.slice(0));
-    // Change the the tagName to the header shortcode
-
     // clear the input field
     setText('');
 
